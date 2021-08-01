@@ -899,3 +899,7 @@ div.timenode:hover .meta:after {
   #page-header::before{
     background: transparent!important;
     }
+/****************************** 标题居中 ******************************/
+#page h1.page-title, #post>#post-info {
+    text-align: center;
+}
