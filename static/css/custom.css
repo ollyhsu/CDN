@@ -322,11 +322,11 @@ img {
   color: var(--icon-color, #333);
 }
 /****************************** Clock优化开始 ******************************/
-#aside-content.aside-content
-  > .sticky_clock
-  > .card-widget.card-clock
-  > .card-glass
-  > .card-background {
-  background-color: unset;
-  box-shadow: unset;
+#aside-content.aside-content>.sticky_clock>.card-widget.card-clock>.card-glass>.card-background {
+    background-color: unset;
+    box-shadow: unset
+}
+
+#hexo_electric_clock>.clock-row {
+    color: var(--text-highlight-color)
 }
