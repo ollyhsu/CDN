@@ -284,12 +284,12 @@ h6::before {
 /****************************** 鼠标样式开始 ******************************/
 body {
   cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
-      default;
+    default;
 }
 a,
 img {
   cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
-      default;
+    default;
 }
 /****************************** IconFont优化开始 ******************************/
 .iconfont {
@@ -297,27 +297,36 @@ img {
 }
 
 .icon-weibo:before {
-  color:#E71F19;
+  color: #e71f19;
 }
 .icon-bilibili:before {
-  color:#1296DB;
+  color: #1296db;
 }
 .icon-CSDN:before {
-  color:#D81D06;
+  color: #d81d06;
 }
 .icon-youxiang:before {
-  color:#FC7A00;
+  color: #fc7a00;
 }
 .icon-RSS:before {
-  color:#D68650;
+  color: #d68650;
 }
 /* 自定义note */
 .note.custom {
-    background-color: #f7f7f7;
-    border-left-color: #777;
-    display: block;
+  background-color: #f7f7f7;
+  border-left-color: #777;
+  display: block;
 }
 .custom:not(.no-icon)::before {
-    font-family: "iconfont";
-    color:var(--icon-color,#333);
+  font-family: "iconfont";
+  color: var(--icon-color, #333);
+}
+/****************************** Clock优化开始 ******************************/
+#aside-content.aside-content
+  > .sticky_clock
+  > .card-widget.card-clock
+  > .card-glass
+  > .card-background {
+  background-color: unset;
+  box-shadow: unset;
 }
